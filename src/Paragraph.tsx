@@ -38,7 +38,7 @@ import './styles/styles.css'
  * @param   {props} ParagraphProps
  * @return          {JSX.Element}
  */
-export default function Paragraph({ version }: ParagraphProps): JSX.Element {
+export default function Paragraph({ version }: Readonly<ParagraphProps>): JSX.Element {
     return (
         <div>
             <p className="p-text">Arrays - Version {version}</p>

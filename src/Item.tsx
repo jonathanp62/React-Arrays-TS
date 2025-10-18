@@ -36,7 +36,7 @@ import type { ItemProps } from "./types/ItemProps.tsx";
  *
  * @return  {JSX.Element}
  */
-export default function Item({ key, name }: ItemProps): JSX.Element {
+export default function Item({ key, name }: Readonly<ItemProps>): JSX.Element {
     return (
         <li key={key}>{name}</li>
     );

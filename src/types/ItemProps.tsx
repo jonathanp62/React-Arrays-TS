@@ -30,6 +30,6 @@
 
 /** The interface for the component's props for clarity and type safety. */
 export interface ItemProps {
-    key: number;
-    name: string;
+    readonly key: number;
+    readonly name: string;
 }
